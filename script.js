@@ -33,7 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Clear the task input field
     taskInput.value = '';
-  }
+    }
+
+    // ["loadTasks"]
 
   // Attach Event Listeners
   addButton.addEventListener('click', addTask);
