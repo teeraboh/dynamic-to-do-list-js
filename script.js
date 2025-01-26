@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ["JSON.parse", "JSON.stringify"]
 
+    // ["localStorage.setItem"]
+
   // Attach Event Listeners
   addButton.addEventListener('click', addTask);
 
