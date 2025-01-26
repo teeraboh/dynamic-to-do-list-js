@@ -35,9 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
     newLi.appendChild(removeButton);
     taskList.appendChild(newLi);
 
-    // Clear the task input field
-    taskInput.value = '';
-
     updateTasks();
   }
 
@@ -50,13 +47,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Attach Event Listeners
   addButton.addEventListener('click', function () {
     addTask(taskInput.value);
+    taskInput.value = '';
   });
 
   taskInput.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
       addTask(taskInput.value);
+      taskInput.value = '';
     }
   });
 });
-
-
